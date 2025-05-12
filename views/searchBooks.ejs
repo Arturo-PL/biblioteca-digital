@@ -1,0 +1,15 @@
+<div class="p-4">
+  <h1 class="mb-4">Buscar Libros</h1>
+
+  <form class="d-flex mb-3" method="GET" onsubmit="this.action = '/books/year/' + encodeURIComponent(this.year.value)">
+    <input type="number" name="year" class="form-control me-2" placeholder="Año de publicación" required>
+    <button type="submit" class="btn btn-primary">Buscar por Año</button>
+  </form>
+
+  <form class="d-flex mb-3" method="GET" onsubmit="this.action = '/books/edition/' + encodeURIComponent(this.edition.value)">
+    <input type="number" name="edition" class="form-control me-2" placeholder="Número de edición" required>
+    <button type="submit" class="btn btn-secondary">Buscar por Edición</button>
+  </form>
+
+  <a href="/books" class="btn btn-secondary">Volver a la lista</a>
+</div>
